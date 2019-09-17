@@ -3,8 +3,8 @@ var chooseScooter = function(){
     console.log("choice",choice);
     
     var button = document.querySelector("#scooter");
-        
-    button.setAttribute("onclick",null);
+        console.log("test");
+    button.setAttribute("onclick",console.log("test2"));
 }
 
 chooseScooter();
