@@ -36,7 +36,7 @@ var chooseSkate = function(){
     node.innerText = "Dr. B rides his skateboard to the store. He doesn't fall off even once.";
     
     var node2 = document.createElement("h2");
-    node.innerText = "Dr. B rides his skateboard to the store. ";
+    node.innerText = "Dr. B rides his skateboard to the store. He doesn't fall off even once.";
     
     node.setAttribute("onclick", "toothpaste()");
     
