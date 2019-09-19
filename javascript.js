@@ -14,7 +14,7 @@ var popUp = function(){
     
     
     var node = document.createElement("h2");
-    node.innerText = "Dr. B rides his scooter to the store.";
+    node.innerText = "Dr. B rides his scooter to the store. He does a few scooter tricks on the way.";
     
     node.setAttribute("onclick", "LimaBeans()");
     
@@ -33,7 +33,7 @@ var popUp = function(){
 var chooseSkate = function(){
     
     var node = document.createElement("h2");
-    node.innerText = "Dr. B rides his skateboard to the store.";
+    node.innerText = "Dr. B rides his skateboard to the store. He doesn't fall off even once.";
     
     var node2 = document.createElement("h2");
     node.innerText = "Dr. B rides his skateboard to the store. ";
