@@ -7,19 +7,47 @@
                 border: 1px solid black;
                 border-color:solid black;
             }
+            body{
+                background-image: url("grocery.jpg");
+                background-size:cover;
+                background-repeat: no-repeat;
+                border-color: black;
+                color: black;
+            }
+            h1, h2{
+                background-color:lightgrey;
+            }
+            button{
+                width:200px;
+                height:100px;
+            }
         </style>
     </head>
     <body>
         <script src="javascript.js"></script>
         <h1>Dr. Brad S. Haw's Trip to the Grocery Store</h1>
         
-        <h2>Dr. Brad S. Haw needs to pick up some things from the store. You get to help him decide what to do on his trip.</h2>
+        <h2>Dr. Brad S. Haw needs to pick up some things from the store. You get to help him decide what to do on his trip. Should he...</h2>
         
         <table>
             <tr>
-                <!--<button id="chooseScooter" onclick=""><th id="#scooter">Take his scooter</th></button>-->
-                <th id="#scooter">Take his scooter</th>
-                <th id="#skateboard">Take his skateboard</th>
+                <button id="chooseScooter" onclick="popUp()" style="position:absolute; top:127px; left:220px;"><h2>Take his scooter</h2></button><button id="chooseSkateboard" onclick="chooseSkate()"><h2>Take his skateboard</h2></button>
+                <!--<th id="#scooter">Take his scooter</th>
+                <th id="#skateboard">Take his skateboard</th>-->
+                <br><br><br><br>
+                <h2>What should he buy first?</h2>
+                <button id="chooseLimaBeans" onclick="LimaBeans()"><h2>Choose Lima Beans</h2></button>
+                <button id="chooseCurds1" onclick="chooseCurds()" style="position: relative; left:10px;"><h2>Choose Cheese Curds</h2></button>
+                
+                 <br><br><br><br>
+                <h2>He only has enough money left for one more item... what should he choose?</h2>
+                <button id="chooseOintment" onclick="chooseMeatballs()"><h2>Choose Meatballs</h2></button>
+                <button id="chooseMeatballs" onclick="chooseToothpaste()" style="position: relative; left:10px; bottom: 20px;"><h2>Choose coffee-flavored toothpaste</h2></button>
+                
+                <button id="chooseOintment" onclick="chooseOintment()" style="position: relative; left: 20px; bottom: 1px;"><h2>Choose Ointment</h2></button>
+                
+                <button id="chooseCookies" onclick="chooseCookies()" style="position: relative; left: 30px; bottom: 1px;"><h2>Choose Cookies</h2></button>
+                
             </tr>
         </table>
     </body>
